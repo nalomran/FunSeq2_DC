@@ -23,7 +23,7 @@ function usage
 {
 	echo " 
 	
-	* Usage : ./run.sh -f file -maf MAF -m <1/2> -len length_cut -inf <bed/vcf> -outf <bed/vcf> -nc -o path -g file -exp file -cls file -exf <rpkm/raw> -p int -cancer cancer_type -s score -uw -ua user_annotations_directory -db
+	* Usage : ./funseq2.sh -f file -maf MAF -m <1/2> -len length_cut -inf <bed/vcf> -outf <bed/vcf> -nc -o path -g file -exp file -cls file -exf <rpkm/raw> -p int -cancer cancer_type -s score -uw -ua user_annotations_directory -db
 	
 	Options : 
 		-f		[Required] User Input SNVs File
@@ -49,10 +49,10 @@ function usage
 	* Multiple Genomes with Recurrent Output
 		
 		Option 1: Separate multiple files by ','
-		Example: ./run.sh -f file1,file2,file3,... -maf MAF -m <1/2> -inf <bed/vcf> -outf <bed/vcf> ...
+		Example: ./funseq2.sh -f file1,file2,file3,... -maf MAF -m <1/2> -inf <bed/vcf> -outf <bed/vcf> ...
 		
 		Option 2: Use the 6th column of BED file to specify samples
-		Example: ./run.sh -f file -maf MAF -m <1/2> -inf bed -outf <bed/vcf> ...
+		Example: ./funseq2.sh -f file -maf MAF -m <1/2> -inf bed -outf <bed/vcf> ...
 	
 	NOTE: Please make sure you have sufficient memory, at least 3G. 
 
